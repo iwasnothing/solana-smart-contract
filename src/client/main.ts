@@ -6,9 +6,9 @@ import {
   establishConnection,
   establishPayer,
   checkProgram,
-  sayHello,
+  storeJson,
   reportGreetings,
-} from './hello_world';
+} from './json_contract';
 
 async function main() {
   console.log("Let's say hello to a Solana account...");
@@ -23,7 +23,7 @@ async function main() {
   await checkProgram();
 
   // Say hello to an account
-  await sayHello();
+  await storeJson();
 
   // Find out how many times that account has been greeted
   await reportGreetings();

@@ -2138,11 +2138,13 @@ dependencies = [
 ]
 
 [[package]]
-name = "solana-bpf-helloworld"
+name = "solana-bpf-jsoncontract"
 version = "0.0.1"
 dependencies = [
  "borsh",
  "borsh-derive",
+ "serde",
+ "serde_json",
  "solana-program",
  "solana-program-test",
  "solana-sdk",
